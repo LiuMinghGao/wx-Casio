@@ -1,0 +1,29 @@
+/* pages/profile/proflie.wxss */
+.avatar{
+  width:100%;
+  height:300rpx;
+  background: #FF6610;
+  display: flex;
+  align-items: center;
+  padding:0 10%;
+}
+.avatar image{
+  width:180rpx;
+  height:180rpx;
+  border-radius:50%;
+  border:3px solid rgba(0,0,0,.3)
+}
+.login{
+  font-size: 15px;
+  display: flex;
+  color: #fff;
+  margin-left:2%
+}
+.cell-item{
+  line-height: 60rpx;
+  width:96%;
+  font-size: 16px;
+  height:60rpx;
+  padding: 10rpx 0 10rpx 10rpx;
+  border-bottom: 1px solid #ddd
+}

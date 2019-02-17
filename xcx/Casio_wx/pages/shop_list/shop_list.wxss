@@ -1,0 +1,31 @@
+/* pages/shop_list/shop_list.wxss */
+.shop_list{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  height:80rpx;
+}
+.shopList-item{
+  height:450rpx;
+  margin-left:3%;
+  margin-top:3%;
+  width:45%;
+  text-align: center;
+  border: 1px solid #ddd
+}
+.shopList-item-one{
+  margin-top: 5%;
+  text-align: center;
+  width:100%;
+  height:300rpx;
+}
+.shopList-item image{
+  width:65%;
+  height:300rpx;
+}
+.shop-price{
+  color: red
+}
+.zfooter{
+  padding:10rpx 40%;
+}

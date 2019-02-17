@@ -1,0 +1,28 @@
+<!--pages/shopCart/shopCart.wxml-->
+<view class="wx-shopcart">
+    <view class="shopCart"  wx:for="{{shoplist}}" wx:key="index">
+         <view class="spselect">
+            <image src="{{item.isSelected?'http://127.0.0.1:3000/img/xz.png':'http://127.0.0.1:3000/img/wxz.png'}}"   data-p="{{index}}" bindtap='select'></image>
+         </view>
+         <view class="myImg">
+            <image src="{{item.img}}"></image>
+         </view>
+         <view class="shop-item">
+            <view class="shoop-item-item">{{item.title}}</view>
+            <view class="shoop-item-item2">
+               <view>￥{{item.price}}</view>
+               <view class="mybutton2">
+                   <button bindtap='subCount' data-id="{{index}}">-</button>
+                   <input type='text' value="{{item.count}}"/>
+                   <button bindtap='addCount' data-id="{{index}}">+</button>
+               </view>
+            </view>
+         </view>
+    </view>
+    <view class="shop-footer">
+        <view class="shop-footer-item">
+           <image src="{{isAllSelected?'http://127.0.0.1:3000/img/xz.png':'http://127.0.0.1:3000/img/wxz.png'}}" bindtap='selectAll'></image><text>全选</text><text>合计:￥{{total}}</text>
+        </view>
+        <view class="shop-footer-item2">去结算({{shopCount}})</view>
+    </view>
+</view>

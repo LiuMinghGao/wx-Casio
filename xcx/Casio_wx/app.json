@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/shopCart/shopCart",
+    "pages/shop_list/shop_list",
+    "pages/profile/proflie",
+    "pages/details/details",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "卡西欧手表旗舰店",
+    "navigationBarTextStyle": "black",
+    "enablePulldownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/pages/static/icon/1.png",
+        "selectedIconPath": "/pages/static/icon/11.png"
+      },
+      {
+        "pagePath": "pages/shopCart/shopCart",
+        "text": "购物车",
+        "iconPath": "/pages/static/icon/2.png",
+        "selectedIconPath": "/pages/static/icon/22.png"
+      },
+      {
+        "pagePath": "pages/profile/proflie",
+        "text": "我的",
+        "iconPath": "/pages/static/icon/3.png",
+        "selectedIconPath": "/pages/static/icon/33.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+/* pages/shopCart/shopCart.wxss */
+.shopCart{
+  width:100%;
+  height:200rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid #ddd;
+  margin-top: 20rpx;
+}
+.spselect{
+  width:10%;
+  height:200rpx;
+  display:flex;
+  justify-content:center;
+  align-items: center
+}
+.spselect image,.shop-footer-item image{
+  width:40rpx;
+  height:40rpx;
+}
+.myImg{
+   width:25%;
+   height:200rpx;
+}
+.myImg image{
+  width:100%;
+  height:200rpx;
+}
+.shop-item{
+  width:65%;
+  height:200rpx;
+}
+.shoop-item-item{
+  width:100%;
+  padding: 20rpx 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.shop-footer-item image{
+  margin-top: 25rpx;
+}
+.shoop-item-item2{
+  margin-top:30rpx;
+  width:100%;
+  height:80rpx;
+  display: flex;
+  justify-content: space-between
+}
+.shoop-item-item2 view:first-child{
+  color:red
+}
+.shop-footer{
+  width:100%;
+  height:90rpx;
+  position: fixed;
+  bottom:0;
+  display: flex;
+}
+.shop-footer-item{
+   width:75%;
+   height:90rpx;
+   display: flex;
+   line-height: 90rpx;
+   padding-left: 20rpx;
+   font-size: 16px;
+}
+.shop-footer-item text:first-child{
+   width:30rpx;
+   height:30rpx;
+   margin-top:25rpx;
+   display: block;
+   border-radius: 50%;
+   border:2px solid #ddd;
+   margin-right: 15rpx;
+}
+.shop-footer-item text:last-child{
+  margin-left: 20rpx;
+}
+.shop-footer-item2{
+  width:25%;
+  height:90rpx;
+  background: #D81E06;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff
+}
+.mybutton2{
+  display: flex;
+  padding-right: 20rpx;
+}
+.mybutton2 button{
+  width:50rpx;
+  height:50rpx;
+  line-height: 50rpx;
+  padding-left: 15rpx
+}
+.mybutton2 input{
+   width:50rpx;
+   text-align: center
+}

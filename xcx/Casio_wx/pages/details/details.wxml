@@ -1,0 +1,50 @@
+<view class="my-details">
+  <!--商品信息-->
+  <view wx:for="{{list}}" wx:key="index">
+  <!--详情轮播-->
+      <swiper indicator-dots='true'>
+         <swiper-item wx:for="{{img}}" wx:key="index">
+            <image lazy-load='true' mode='aspectFill' src="{{item}}"></image>
+         </swiper-item>
+     </swiper>
+      <!--价格-->
+      <view class="product-price">￥{{item.price}}</view>
+      <!--标题-->
+      <view class="product-title">
+         <text>卡西欧限量 {{item.title}}</text>
+      </view>
+      <!-- 颜色 -->
+      <!-- <view class="select-color"> 
+          <view>颜色</view>
+          <view class="product-color">
+             <text>红</text>
+             <text>黑</text>
+             <text>黄</text>
+             <text>黄</text>
+          </view>
+      </view> -->
+    <!--数量-->
+      <view class="prduct-count">
+          <text>数量</text>
+          <view class="mybutton">
+             <button bindtap='subCount'>-</button><input type='text' value="{{count}}"/><button bindtap='addCount'>+</button>
+          </view>
+      </view>
+   </view>
+   <!--底部固定-->
+   <view class="footer-fixed">
+      <view class="footer-item">
+        <view class="footer-item-item">
+          <image src="http://127.0.0.1:3000/img/kf.png"></image>
+          <text>联系客服</text>
+        </view>
+        <view bindtap='tiaozhuan' class="footer-item-item">
+            <image src="http://127.0.0.1:3000/img/gwc22.png"></image>
+            <text>购物车</text>
+        </view>
+      </view>
+      <view class="addcart" bindtap='addcart'>加入购物车</view>
+      <view class="linkShop">立即购买</view>
+   </view>
+
+</view>

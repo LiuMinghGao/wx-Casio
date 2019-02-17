@@ -1,0 +1,20 @@
+<view class="myProflie">
+    <view class="avatar">
+      <view>
+         <image src="http://127.0.0.1:3000/img/timg.jpg"></image>
+      </view>
+      <view class="login">
+          <navigator>登录/</navigator>
+          <navigator>注册</navigator>
+      </view>
+    </view>
+    <view class="fenge"></view>
+    <view class="cell">
+        <view class="cell-item arrow">我的订单</view>
+        <view class="cell-item arrow">我的预约</view>
+        <view class="cell-item arrow">我的优惠券</view>
+        <view class="cell-item arrow">退换/售后</view>
+        <view class="cell-item arrow">反馈</view>
+    </view>
+
+</view>

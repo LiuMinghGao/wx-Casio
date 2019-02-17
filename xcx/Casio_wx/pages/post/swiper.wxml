@@ -1,0 +1,7 @@
+<template name="post_item_swiper">
+    <swiper autoplay='true' indicator-dots='true'>
+        <swiper-item wx:for="{{list}}" wx:key="index">
+            <image lazy-load='true' mode='aspectFill' src="{{item.img}}"></image>
+        </swiper-item>
+    </swiper>
+</template>

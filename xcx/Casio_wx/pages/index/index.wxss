@@ -1,0 +1,81 @@
+@import "../post/swiper.wxss";
+.mynav{
+    width:100%;
+    height:400rpx;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.nav-item{
+    width:33.33%;
+    box-sizing: border-box;
+    height:200rpx;
+    padding: 10rpx 10rpx;
+}
+.nav-item image{
+  width:100%;
+  height:150rpx;
+}
+.nav-item view{
+  font-size: 12px;
+  text-align: center
+}
+.pledge{
+  width:100%;
+  height:180rpx;
+  display: flex;
+}
+.pledge-item{
+  width:25%;
+  height:180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center
+}
+.pledge-item image{
+  width:30%;
+  height:60rpx;
+  margin: 0 auto
+}
+.pledge-item text{
+  font-size: 12px;
+  text-align: center
+}
+.pledge-color{
+  color: red
+}
+.hot-product{
+  text-align: center;
+  font-size: 12px;
+  height:50rpx;
+  line-height: 50rpx;
+  padding-bottom: 20rpx;
+}
+.myscroll{
+    height:350rpx;
+    display: flex;
+    white-space: nowrap;
+}
+.scroll-item{
+  display: inline-block;
+  width:32.6%;
+  height:350rpx;
+  flex-direction: column;
+  text-align: center
+}
+.scroll-item image{
+  width:60%;
+  height:200rpx;
+  margin:0 auto
+}
+.scroll-item view text{
+  font-size: 12px;
+}
+.myprice{
+  color: red
+}
+.scroll-item view{
+  text-align: left;
+  padding: 0 30rpx;
+}

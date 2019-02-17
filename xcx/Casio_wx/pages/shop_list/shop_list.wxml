@@ -1,0 +1,12 @@
+<view class="shop_list">
+     <view class="shopList-item" wx:for="{{shopList}}" wx:key="index">
+         <view class="shopList-item-one">
+           <image  bindtap='skip' data-id="{{item.pid}}" src="{{item.img}}"></image>
+         </view>
+         <view>{{item.title}}</view>
+         <view class="shop-price">￥{{item.price}}</view>
+      </view>
+      <view class="zfooter">到底了</view>
+</view>
+
+

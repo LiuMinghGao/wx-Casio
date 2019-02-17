@@ -1,0 +1,31 @@
+<import src="../post/swiper"/>
+<view class="index-container">
+    <!--轮播-子模板-->
+    <template is="post_item_swiper" data="{{list}}"></template>
+    <!--分割快-->
+    <view class="fenge"></view>
+    <!--热销商品-->
+    <view class="hot-product">卡西欧推荐热卖(左滑还有更多商品哦)</view>
+    <scroll-view scroll-x='true' class="myscroll">
+       <view class="scroll-item" wx:for="{{product_list}}" wx:key="index">
+           <image src="{{item.img}}"  bindtap='skip' data-id="{{item.pid}}"></image>
+           <view><text>{{item.title}}</text></view>
+           <view class="myprice"><text>￥{{item.price}}</text></view>
+      </view>
+    </scroll-view>
+     <!--导航分类-->
+    <view class="mynav">
+        <view class="nav-item" wx:for="{{navlist}}" wx:key="index">
+            <image bindtap='shopList' data-id="{{item.id}}" src="{{item.img}}"></image>
+            <view>{{item.title}}</view>
+        </view>
+    </view>
+     <!--顾客保证-->
+    <view class="pledge">
+        <view class="pledge-item" wx:for="{{guarante}}" wx:key="index">
+          <image src="{{item.img}}"></image>
+          <text class="pledge-color">{{item.title}}</text>
+          <text>{{item.subtitle}}</text>
+        </view>
+    </view>
+</view>
