@@ -76,30 +76,35 @@ Page({
   },
   subCount(e){
     //不更新数据库  //页面自定义绑定下标index
-    var shopList = this.data.shoplist
+    /*var shopList = this.data.shoplist
     var i = e.target.dataset.id;
-    shopList[i].count--;
+    if (shopList[i].count>1){
+      shopList[i].count--;
+    }
     if (shopList[i].isSelected) {
       this.data.shopCount--
     }
     this.setData({
       shoplist: shopList,
       shopCount: this.data.shopCount
-    })
+    })*/
     //更新到数据库  //页面自定义绑定item.id
-    /*  var id=e.target.dataset.id;
+      var shoplist = this.data.shoplist;
+      var id=e.target.dataset.id;
       for(var p of this.data.shoplist){
         if(p.id==id && p.count>1){
             p.count--;
           this.updateCount(p.id, p.count);
-          this.getShopCart();
+          this.setData({
+            shoplist: shoplist
+          })
           break;
         }
-      }*/
+      }
   },
   addCount(e){
     //不更新数据库  //页面自定义绑定下标index
-    var shopList=this.data.shoplist
+   /* var shopList=this.data.shoplist
     var i= e.target.dataset.id;
     shopList[i].count++;
     if (shopList[i].isSelected){
@@ -108,18 +113,20 @@ Page({
     this.setData({
       shoplist: shopList,
       shopCount: this.data.shopCount
-    })
+    })*/
     //更新到数据库  //页面自定义绑定item.id
-   /*
+     var shoplist=this.data.shoplist;
      var id=e.target.dataset.id;
      for(var p of this.data.shoplist){
       if(p.id==id){
         p.count++;
-       this.updateCount(p.id,p.count);
-        this.getShopCart();
+        this.updateCount(p.id,p.count);
+        this.setData({
+          shoplist: shoplist
+        })
         break;
       }
-    }*/
+    }
   },
   updateCount(id,count){
       wx.request({

@@ -12,9 +12,9 @@
             <view class="shoop-item-item2">
                <view>￥{{item.price}}</view>
                <view class="mybutton2">
-                   <button bindtap='subCount' data-id="{{index}}">-</button>
+                   <button bindtap='subCount' data-id="{{item.id}}">-</button>
                    <input type='text' value="{{item.count}}"/>
-                   <button bindtap='addCount' data-id="{{index}}">+</button>
+                   <button bindtap='addCount' data-id="{{item.id}}">+</button>
                </view>
             </view>
          </view>
